@@ -312,7 +312,6 @@ header.shadow .logo{
     width: 100%;
     height: 420px;
     object-fit: cover;
-    margin-left: 20px;
 }
 
 .post-content{
@@ -363,7 +362,7 @@ header.shadow .logo{
         padding: 14px 0;
     }
     .post-container{
-        margin: 0;
+        margin: auto;
         width: 95%;
     }
 }
