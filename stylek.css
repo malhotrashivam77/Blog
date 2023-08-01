@@ -381,9 +381,9 @@ header.shadow .logo{
     .home{
         min-height: 380px;
     }
-    .home-title{
+    /* .home-title{
         font-size: 3rem;
-    }
+    } */
     .header-title{
         font-size: 2rem;
     }
