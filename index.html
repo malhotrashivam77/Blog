@@ -31,14 +31,17 @@
 
     <!-- post filter -->
     <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="famous_Places">Famous Places</span>
-        <span class="filter-item" data-filter="recommended_Places">Recommended Places</span>
-        <span class="filter-item" data-filter="famous_Tapris">Famous Tapris</span>
-        <span class="filter-item" data-filter="cafes">Cafes</span>
-        <span class="filter-item" data-filter="must_Try">Must Try</span>
+        <label for="filter-select" class="filter-label">Select:</label>
+        <select id="filter-select" class="filter-select">
+            <option value="all">All</option>
+            <option value="famous_Places">Famous Places</option>
+            <option value="recommended_Places">Recommended Places</option>
+            <option value="famous_Tapris">Famous Tapris</option>
+            <option value="cafes">Cafes</option>
+            <option value="must_Try">Must Try</option>
+        </select>
     </div>
-
+    
     <!-- posts -->
     <section class="post container">
         <!-- post box 1 -->

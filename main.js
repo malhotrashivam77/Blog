@@ -1,26 +1,29 @@
 // filterjs
+$(document).ready(function () {
+    $('#filter-select').change(function () {
+        const value = $(this).val();
+        if (value === 'all') {
+            $('.post-box').show('1000');
+        } else {
+            $('.post-box')
+                .not('.' + value)
+                .hide('1000');
+            $('.post-box')
+                .filter('.' + value)
+                .show('1000');
+        }
+    });
 
-$(document).ready(function(){
-$('.filter-item').click(function(){
-    const value=$(this).attr('data-filter');
-    if(value=='all'){
-        $('.post-box').show('1000');
-    }
-    else{
-        $('.post-box')
-        .not('.'+ value)
-        .hide('1000');
-        $('.post-box')
-        .filter('.'+ value)
-        .show('1000');
-    }
-});
-// add active to btn
-
-$('.filter-item').click(function(){
-    $(this).addClass('active-filter').siblings().removeClass('active-filter');
-})
-
+    // Add 'active-filter' class to the selected option in the dropdown
+    $('.filter-select').change(function () {
+        $('.filter-select option').each(function () {
+            if ($(this).is(':selected')) {
+                $(this).addClass('active-filter');
+            } else {
+                $(this).removeClass('active-filter');
+            }
+        });
+    });
 });
 
 

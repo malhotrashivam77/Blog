@@ -115,6 +115,34 @@ header.shadow .logo{
 
 /* post filter */
 
+/* Assuming you want the select to be displayed inline */
+.filter-select {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed */
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #172317;
+}
+
+/* Style the dropdown arrow */
+.filter-select::-ms-expand {
+    display: none; /* Remove the arrow for IE/Edge */
+}
+
+.filter-select:focus {
+    outline: none; /* Remove the focus outline */
+}
+
+.filter-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+
 .post-filter{
     display: flex;
     justify-content: center;
