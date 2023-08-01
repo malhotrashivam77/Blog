@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
     box-sizing: border-box;
 }
 
@@ -120,7 +119,7 @@ header.shadow .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1.5rem;
+    column-gap: 0.5rem;
     margin-top: 2rem !important;
 }
 
@@ -285,7 +284,7 @@ header.shadow .logo{
     width: 100%;
     height: 420px;
     object-fit: cover;
-    object-position: center;
+    margin-left: 20px;
 }
 
 .post-content{
@@ -393,6 +392,9 @@ header.shadow .logo{
 }
 
 @media(max-width:396px){
+    .container {
+        max-width: 100%;
+      }
     .home-title{
         font-size: 2rem;
     }
