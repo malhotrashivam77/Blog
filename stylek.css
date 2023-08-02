@@ -51,13 +51,13 @@ header{
 }
 
 header.shadow{
-    background: var(--bg-color);
+    background: var(--second-color);
     box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
     transition: 0.4s;
 }
 
 header.shadow .logo{
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .nav{
@@ -67,10 +67,11 @@ header.shadow .logo{
     padding: 1px 0;
 }
 
-.logo{
+.logo {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--bg-color);
+    margin-top: 10px;
 }
 
 .login{
@@ -295,7 +296,7 @@ header.shadow .logo{
 }
 
 .back-home{
-    color: var(--second-color);
+    color: var(--bg-color);
     font-size: 1.5rem;
 }
 
@@ -434,7 +435,7 @@ header.shadow .logo{
     }
 
     .home{
-        min-height: 300px;
+        min-height: 429px;
     }
 
     .post-box{
